@@ -53,6 +53,16 @@ nav li a:hover{
     display: block;
     text-align: center;
 }
+.input-box{
+    width: 100%;
+    height: 500px;
+    border: 2px solid black;
+}
+.input-box .item1{
+    float: left;
+    width: 50%;
+    height: 500px;
+    border: 2px solid black;
  
-footer{padding: 0px 10px;}
+footer{padding: 0px 10px; background-color: #f1f1f1; width: 100%; height: 20px;}
 footer img{width: 100%;}

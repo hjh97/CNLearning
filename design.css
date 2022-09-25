@@ -36,7 +36,7 @@ header{
 nav{
     position: absolute;
     bottom: 10px;
-    left: 220px;
+    right: 10px;
     font-size: 16px;
 }
  
@@ -63,7 +63,7 @@ nav li a{color: white;}
     height: 500px;
     border: 2px solid black;
 }
-/* 박스 두 개 만들어서 병렬로 메인페이지 만들려 했으나 못함..
+/* 박스 두 개 만들어서 병렬로 메인페이지 만들려 했으나 못함.. 가능?
 .input-box .item2{
     float: right;
     width: 50%;
