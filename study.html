@@ -4,11 +4,14 @@
 <title>CSS Template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 * {
   box-sizing: border-box;
 }
-
+pre{
+  word-wrap: break-word;
+}
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -17,12 +20,12 @@ body {
 /* Style the side navigation */
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 15%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #2d3a4b;
   overflow-x: hidden;
 }
 
@@ -43,7 +46,7 @@ body {
 
 /* Style the content */
 .content {
-  margin-left: 200px;
+  margin-left: 15%;
   padding-left: 20px;
 }
 </style>
@@ -57,8 +60,101 @@ body {
 </div>
 
 <div class="content">
-  <h2>학습터입니다.</h2>
-  <p>A full-height, fixed sidenav and content.</p>
+  <h2>C 언어 학습터</h2>
+  <ol>
+    <li><a href="#기초">C언어의 기초</a></li>
+    <li><a href="#입출력">입출력</a></li>
+    <li><a href="#조건문">조건문</a></li>
+    <li><a href="#반복문">반복문</a></li>
+    <li><a href="#배열">배열</a></li>
+    <li><a href="#함수">함수</a></li>
+    <li><a href="#포인터">포인터</a></li>
+    <li><a href="#구조체">구조체</a></li>
+    <li><a href="#동적 메모리 할당">동적 메모리 할당</a></li>
+  </ol>
+  <div>
+    <h2 id="기초">1. C언어의 기초</h2>
+    <p>
+      헤더파일이란, C언어의 문법을 가지고 있는 프로그램입니다.
+      이 파일이 코드에 추가되어 있지 않다면, 컴퓨터는 아무것도 하지 못합니다.
+      왜냐하면 컴퓨터가 글자들을 알아볼 수가 없거든요. 헤더파일을 삽입할 때는 이렇게 삽입합니다.
+      <pre>
+        #include <stdio.h> /*stdio.h is inputed*/
+        #include <stdlib.h> /*stdlib.h is inputed*/</pre>
+      이렇게 #include를 쓰고 꺽쇠(부등호) 두 개 사이에 헤더파일 이름을 쓰면 이렇게 삽입이 됩니다. stdio.h와 stdlib.h는 C언어의 문법을 가지고 있습니다. 이게 없으면 컴퓨터는 컴파일을 못 해요</p>
+    
+  </div>
+  <div>
+    <h2 id="입출력">2. 입출력</h2>
+    <p>main "함수"는 나중에 알게 될 텐데, C언어는 프로그램이 시작되면 무조건 main부터 찾게 됩니다. main함수 안에 코딩을 짜야 명령어가 실행됩니다. main함수는 이렇게 씁니다.
+
+      1
+      2
+      3
+      4
+      5
+      6
+      7
+      #include <stdio.h>
+      #include <stdlib.h>
+       
+      int main()
+      {
+          /*coding...*/
+      }
+      위에 main을 쓰고, 중괄호 안에 명령어를 쓰면 그 명령어가 작동됩니다. 다음부터는 그냥 main 안에 있다고 생각해주세요. 생략하겠습니다 ;)
+      
+      그런데, main 앞에 있는 int 보이시나요? 이 int는 정수(-21억 ~ +21억)를 의미하는데, main함수 안에 있는 int는 main의 반환값을 의미합니다. 자세한 내용은 함수에서 봐주세요.
+      
+      반환값에 따라서 반환을 해야 하는 값이 다른데, 반환값을 정하지 않으면 무조건 0으로 반환됩니다. 이것을 바꾸려면 "return 반환값"을 쓰시면 됩니다.
+      
+      1
+      2
+      3
+      4
+      5
+      6
+      7
+      8
+      #include <stdio.h>
+      #include <stdlib.h>
+       
+      int main()
+      {
+          /*coding*/
+          return 0;
+      }
+      이렇게 쓰시면 완벽하게 되요 :)</p>
+  </div>
+  <div>
+    <h2 id="조건문">3. 조건문</h2>
+    <p>기니디리</p>
+  </div>
+  <div>
+    <h2 id="반복문">4. 반복문</h2>
+    <p>기니디리</p>
+  </div>
+  <div>
+    <h2 id="배열">5. 배열</h2>
+    <p>기니디리</p>
+  </div>
+  <div>
+    <h2 id="함수">6. 함수</h2>
+    <p>기니디리</p>
+  </div>
+  <div>
+    <h2 id="포인터">7. 포인터</h2>
+    <p>기니디리</p>
+  </div>
+  <div>
+    <h2 id="구조체">8. 구조체</h2>
+    <p>기니디리</p>
+  </div>
+  <div>
+    <h2 id="동적 메모리 할당">9. 동적 메모리 할당</h2>
+    <p>기니디리</p>
+  </div>
+  
 </div>
 
 </body>
